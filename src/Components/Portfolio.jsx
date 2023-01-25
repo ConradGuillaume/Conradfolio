@@ -10,9 +10,9 @@ import esthetMobile from "../img/esthet-phone.png";
 import ohmyfood from "../img/ohmyfood.png";
 import ohmyfoodTablet from "../img/ohmyfood-tablet.png";
 import ohmyfoodMobile from "../img/ohmyfood-mobile.png";
-import panthere from "../img/panthere.png";
-import panthereTablet from "../img/panthere-tablet.png";
-import panthereMobile from "../img/panthere-mobile.png";
+import kids from "../img/kids.png";
+import kidsTablet from "../img/kids-tablette.png";
+import kidsMobile from "../img/kids-mobile.png";
 import pizza from "../img/pizzaApDesk.png";
 import pizzatablet from "../img/pizzaApTablet.png";
 import pizzamobile from "../img/pizzaApMobile.png";
@@ -413,10 +413,10 @@ const Portfolio = () => {
             }}
           >
             <img src={pc} alt="" className="pc-contain" />
-            <img id="panthere" src={panthere} alt="projet-1 " className="pc" />
-            <img src={panthereMobile} alt="" className="mobile" />
-            <img src={panthereTablet} alt="" className="tablet" />
-            <h1>La Panthère</h1>
+            <img id="panthere" src={kids} alt="projet-1 " className="pc" />
+            <img src={kidsMobile} alt="" className="mobile" />
+            <img src={kidsTablet} alt="" className="tablet" />
+            <h1>FiestaKids57</h1>
             <AnimatePresence>
               {animInfo4 && (
                 <motion.div
@@ -441,7 +441,7 @@ const Portfolio = () => {
                     alt="info"
                   />
                   <motion.a
-                    href="https://conradguillaume.github.io/LaPanthere/"
+                    href="https://fascinating-chaja-9bbaff.netlify.app/"
                     target="_blank"
                     exit={{ opacity: 0 }}
                     animate={{ opacity: 1, transition: { delay: 0.9 } }}
@@ -455,17 +455,17 @@ const Portfolio = () => {
                       document.querySelector(".hi").className = "info";
                     }}
                   >
-                    <h2>La panthere -SEO </h2>
+                    <h2>FiestaKids57</h2>
                     <h3>
                       Technologies Utilisées: <br />
-                      <p> HTML, CSS</p>
+                      <p> HTML, SCSS, REACT, FRAMER MOTION</p>
                     </h3>
                     <p>
-                      Travail sur l'amélioration en référencement d'un site et
-                      son optimisation WCAG <br /> Analyse de l’état actuel de
-                      SEO du site fourni <br />
-                      Amélioration du SEO du site. <br /> Comparaison des
-                      résultats.
+                      Site vitrine évolutif pour une entreprise d'animation dans
+                      le 57 <br /> Site en construction ! <br />
+                      Donner de la visibilité à leur entreprise et rédiriger les
+                      prospects sur leurs réseaux sociaux
+                      <br /> Comparaison des résultats.
                     </p>
                   </div>
                 </motion.div>
