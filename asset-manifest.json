@@ -1,38 +1,38 @@
 {
   "files": {
     "main.css": "/static/css/main.eb8670c6.css",
-    "main.js": "/static/js/main.aa2611fa.js",
+    "main.js": "/static/js/main.3dd5a890.js",
     "static/media/office-865091.jpg": "/static/media/office-865091.e3179d7d28247e26d376.jpg",
     "static/media/poste.jpg": "/static/media/poste.f520800f3636637df03b.jpg",
     "static/media/knife.jpg": "/static/media/knife.511e1c542dc9114645db.jpg",
     "static/media/build.png": "/static/media/build.9a99f4b83aa129a27204.png",
     "static/media/code.jpg": "/static/media/code.66ac09eb3af1341037d4.jpg",
+    "static/media/kids.png": "/static/media/kids.b3593d2c18029332ef65.png",
     "static/media/moi.png": "/static/media/moi.ec52b6843ac5ba662009.png",
     "static/media/guillaume.jpg": "/static/media/guillaume.262fa14c5115f0bb2bbd.jpg",
     "static/media/groupo.png": "/static/media/groupo.9ca3ad67ee0b44023164.png",
     "static/media/PC.png": "/static/media/PC.e09998f91eed3998f435.png",
     "static/media/ohmyfood.png": "/static/media/ohmyfood.52579e9787f079c18f1e.png",
-    "static/media/panthere.png": "/static/media/panthere.bb94e455ebe44ce10d55.png",
     "static/media/css.png": "/static/media/css.a327b6ba3be7d6e4fe57.png",
     "static/media/kanap.png": "/static/media/kanap.5140a5b7649900c19896.png",
     "static/media/pizzaApDesk.png": "/static/media/pizzaApDesk.0fdebfca3394ed5ec7dd.png",
     "static/media/html.png": "/static/media/html.91c24f93ff8755047a4d.png",
+    "static/media/kids-tablette.png": "/static/media/kids-tablette.ec9c6b6f9489d8b2158c.png",
     "static/media/groupo-tablet.png": "/static/media/groupo-tablet.1a00848b03894f921863.png",
     "static/media/node.png": "/static/media/node.07d152a8a036951b8d14.png",
     "static/media/esthet.png": "/static/media/esthet.eb60b17a11c5356b026a.png",
     "static/media/react.png": "/static/media/react.44319306359c7112276d.png",
     "static/media/ohmyfood-tablet.png": "/static/media/ohmyfood-tablet.8d53d1ce6e6488ed0d34.png",
-    "static/media/panthere-tablet.png": "/static/media/panthere-tablet.571251daec71e04bc64c.png",
     "static/media/kanap-tablet.png": "/static/media/kanap-tablet.491f94802410a60f9686.png",
     "static/media/est.jpg": "/static/media/est.017b6a03c91838f587f3.jpg",
     "static/media/pizzaApTablet.png": "/static/media/pizzaApTablet.1009c5c63e75532cd00a.png",
     "static/media/redux.png": "/static/media/redux.b3b939c66aecf7d53967.png",
     "index.html": "/index.html",
     "main.eb8670c6.css.map": "/static/css/main.eb8670c6.css.map",
-    "main.aa2611fa.js.map": "/static/js/main.aa2611fa.js.map"
+    "main.3dd5a890.js.map": "/static/js/main.3dd5a890.js.map"
   },
   "entrypoints": [
     "static/css/main.eb8670c6.css",
-    "static/js/main.aa2611fa.js"
+    "static/js/main.3dd5a890.js"
   ]
 }
