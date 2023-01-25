@@ -1,14 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
-import Competence from "../Components/Competence";
 import {
   Link,
-  Button,
-  Element,
-  Events,
-  animateScroll as scroll,
-  scrollSpy,
-  scroller,
 } from "react-scroll";
 
 const Navigation = () => {

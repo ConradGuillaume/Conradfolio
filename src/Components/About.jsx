@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { motion, useAnimation, useInView } from "framer-motion";
+import { motion,  useInView } from "framer-motion";
 import couteau from "../img/knife.jpg";
 import code from "../img/code.jpg";
 import { useEffect } from "react";
@@ -20,7 +20,6 @@ const About = () => {
   const [animAbout, SetAnimAbout] = useState(false);
   const ref = useRef(null);
   const isInView = useInView(ref, { marginTop: "50%" });
-  const animation = useAnimation();
 
   useEffect(() => {
     if (isInView) {

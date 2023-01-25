@@ -3,12 +3,6 @@ import { useState } from "react";
 import { AnimatePresence, motion, useAnimation } from "framer-motion";
 import {
   Link,
-  Button,
-  Element,
-  Events,
-  animateScroll as scroll,
-  scrollSpy,
-  scroller,
 } from "react-scroll";
 
 const BurgerNav = () => {
