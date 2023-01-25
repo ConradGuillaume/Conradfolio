@@ -23,7 +23,6 @@ import {
   motion,
   AnimatePresence,
   useInView,
-  useAnimation,
 } from "framer-motion";
 import { useEffect } from "react";
 import { useState } from "react";
@@ -70,7 +69,7 @@ const card = {
 const Portfolio = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { marginTop: "50%" });
-  const animation = useAnimation();
+
 
   const [animFolio, SetAnimFolio] = useState(false);
   const [animInfo, SetAnimInfo] = useState(false);
