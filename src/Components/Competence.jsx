@@ -11,7 +11,7 @@ import Ts from "../img/Ts.png";
 import Wp from "../img/wordpress.png";
 import poste from "../img/poste.jpg";
 import { useState } from "react";
-import { AnimatePresence, delay, motion, useScroll } from "framer-motion";
+import { AnimatePresence,  motion} from "framer-motion";
 
 import CV from "./CV";
 
@@ -35,8 +35,7 @@ const openAside = {
 };
 
 const Competence = () => {
-  const [PipeAnim, SetPipeAnim] = useState(false);
-  const [CompAnim, SetCompAnim] = useState(false);
+
   const [recommand, SetRecommand] = useState(false);
   const [remote, SetRemote] = useState(false);
   const [Cv, SetCv] = useState(false);
