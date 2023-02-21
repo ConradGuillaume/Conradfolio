@@ -6,16 +6,33 @@
     height: 100%;
   }
 }
+.place {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  transform: translateY(-60px);
+}
 .portfolio-container {
   position: relative;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  min-height: 100vh;
+  height: 100%;
   padding-bottom: 10%;
   overflow: hidden;
-  background: #141414;
+  width: 92%;
+
+  background: $color-1;
+  --mask: conic-gradient(
+      from 120deg at top,
+      #0000,
+      #000 1deg 119deg,
+      #0000 120deg
+    )
+    50%/103.92px 100%;
+  -webkit-mask: var(--mask);
+  mask: var(--mask);
   @media (max-width: 600px) {
     min-height: 2910px;
   }
@@ -23,14 +40,15 @@
     min-height: 1700px;
   }
   h1 {
-    box-shadow: 0px -7px 20px 12px #ff6e40;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 10vh;
     width: 100%;
     color: white;
+    text-shadow: 2px 0px 0px $color-3;
     font-size: 55px;
+    margin-top: 2%;
     margin-bottom: 5%;
   }
   .folio-trigger {
@@ -138,6 +156,7 @@
         align-items: center;
         font-size: 28px;
         color: $color-3;
+        text-shadow: 1px 0px 0px white;
         padding: 15%;
         margin-top: 95%;
         background: black;

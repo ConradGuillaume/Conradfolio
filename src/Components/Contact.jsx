@@ -10,12 +10,11 @@ const Contact = () => {
   const title = {
     hidden: {
       y: "50vh",
-      opacity: 0,
+
     },
     visible: {
       y: 0,
-      opacity: 1,
-      transition: { duration: 1.5 },
+      transition: { duration: 1 },
     },
   };
   const form = useRef();

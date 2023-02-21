@@ -1,11 +1,19 @@
 .contact-container {
   position: relative;
   overflow: hidden;
-  height: 100vh;
-  width: 100%;
+  transform: translateY(-150px);
+  height: 120vh;
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media (max-width: 800px) {
+    transform: translateY(-75px);
+  }
+  @media (max-width: 600px) {
+    transform: translateY(-140px);
+  }
+
   .contact-trigger {
     position: absolute;
     z-index: 0;
@@ -14,21 +22,27 @@
     width: 50px;
   }
   .form-container {
+    width: 92%;
+    background: $color-1;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 50%;
-    height: 70%;
-    @media (max-width: 1300px) {
-      width: 80%;
-    }
-    @media (max-width: 800px) {
-      width: 100%;
-    }
+    height: 100%;
+    --mask: conic-gradient(
+        from 120deg at top,
+        #0000,
+        #000 1deg 119deg,
+        #0000 120deg
+      )
+      50%/103.92px 100%;
+    -webkit-mask: var(--mask);
+    mask: var(--mask);
     @media (max-width: 600px) {
-      width: 100%;
-      height: 95%;
+      background: transparent;
+      border: none;
+      --mask: none;
     }
+
     form {
       overflow: hidden;
       position: relative;
@@ -39,13 +53,11 @@
       align-items: center;
       border-radius: 25px;
       box-shadow: 0px 0px 15px 7px black;
-      backdrop-filter: blur(5px);
+      background: $color-1;
       width: 70%;
-      height: 100%;
-      background: transparent;
+      height: 70%;
       color: $color-3;
       @media (max-width: 800px) {
-        height: 95%;
         width: 80%;
       }
       @media (max-width: 500px) {
@@ -54,7 +66,7 @@
       }
       @media (max-width: 600px) {
         width: 100%;
-        height: 95%;
+        height: 80%;
       }
       .title {
         position: absolute;

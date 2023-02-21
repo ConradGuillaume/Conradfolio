@@ -1,21 +1,11 @@
 import React from "react";
-import { motion } from "framer-motion";
-import {
-  Link,
-} from "react-scroll";
+import { Link } from "react-scroll";
 
 const Navigation = () => {
   return (
     <div className="nav-container">
       <nav>
-        <motion.ul
-          initial={{ x: "-100vw", opacity: 0 }}
-          animate={{
-            x: 0,
-            opacity: 1,
-            transition: { duration: 2.4, ease: "easeInOut" },
-          }}
-        >
+        <ul>
           <li>
             <Link to="competence"> Compétences</Link>
           </li>
@@ -28,7 +18,7 @@ const Navigation = () => {
           <li>
             <Link to="contact">Contact</Link>
           </li>
-        </motion.ul>
+        </ul>
       </nav>
     </div>
   );

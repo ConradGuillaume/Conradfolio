@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { motion,  useInView } from "framer-motion";
+import { motion, useInView } from "framer-motion";
 import couteau from "../img/knife.jpg";
 import code from "../img/code.jpg";
 import { useEffect } from "react";
@@ -34,9 +34,6 @@ const About = () => {
           <motion.h1 variants={title} initial="hidden" animate="visible">
             A propos
           </motion.h1>
-          <motion.h2 variants={title} initial="hidden" animate="visible">
-            Vous reprendrez bien un peu de code ?{" "}
-          </motion.h2>
           <div className="contain">
             <motion.div
               className="past"
@@ -103,8 +100,7 @@ const About = () => {
               </article>
             </motion.div>
           </div>
-          <div className="top"></div>
-          <div className="bottom"></div>
+
         </section>
       )}
       <div ref={ref} className="about-trigger"></div>

@@ -1,6 +1,6 @@
 .nav-container {
   position: absolute;
-  top: 8%;
+  top: 0%;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -14,7 +14,7 @@
     backdrop-filter: blur(10px);
     display: flex;
     align-items: center;
-    width: 100%;
+    width: 92%;
     height: 80px;
     ul {
       width: 100%;
@@ -32,7 +32,7 @@
         z-index: 2;
         cursor: pointer;
         &:hover {
-          border-bottom: 4px solid rgb(255, 15, 15);
+          border-bottom: 4px solid $color-3;
         }
         a {
           display: flex;

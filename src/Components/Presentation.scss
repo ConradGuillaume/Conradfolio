@@ -1,24 +1,52 @@
 .presentation-container {
   position: relative;
   height: 100vh;
+  width: 100%;
   display: flex;
   align-items: center;
+  justify-content: center;
   @media (max-width: 1000px) {
     align-items: flex-start;
   }
-  .moi {
-    cursor: pointer;
+  .media {
     position: absolute;
-    object-fit: cover;
-    left: 0%;
-    bottom: 0;
-    height: 350px;
-    filter: drop-shadow(10px 1px 5px #000000);
-    @media (max-width: 600px) {
-      height: 200px;
-      bottom: 0%;
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+    top: 1%;
+    left: 1%;
+    img {
+      cursor: pointer;
+      filter: drop-shadow(0px 0px 2px #9b9393);
+      height: 45px;
+      margin: 5px 0px;
     }
   }
+  .containAll {
+    width: 92%;
+    height: 100%;
+    background: $color-1;
+  }
+  .imgcontain {
+    position: absolute;
+    width: 92%;
+    height: 100%;
+    display: flex;
+    align-content: flex-start;
+    margin-top: 5%;
+    @media (max-width: 800px) {
+      align-items: flex-end;
+      justify-content: center;
+    }
+    .moi {
+      cursor: pointer;
+      object-fit: cover;
+      border-radius: 50%;
+      height: 280px;
+      filter: drop-shadow(0px 1px 2px $color-3);
+    }
+  }
+
   article {
     display: flex;
     flex-direction: column;
@@ -33,7 +61,8 @@
     }
     h1 {
       color: rgb(255, 255, 255);
-      text-shadow: 0px 0px 10px rgb(0, 0, 0);
+      text-shadow: 3px 0px 0px $color-3;
+      filter: drop-shadow(1px 1px 0px rgb(255, 255, 255));
       font-size: 90px;
       padding: 0% 10%;
       @media (max-width: 1200px) {
@@ -72,101 +101,13 @@
       left: 0;
       height: 900px;
       width: 600px;
-      .main-bubble {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 400px;
-        height: 300px;
-        border-radius: 300%;
-        background: white;
-        padding: 2%;
-        text-align: center;
-        box-shadow: 7px 9px 18px 20px black;
-        p {
-          font-size: 20px;
-        }
-      }
-      .bublle {
-        position: absolute;
-        top: 35%;
-        left: 10%;
-        height: 100px;
-        width: 100px;
-        border-radius: 100px;
-        background: white;
-      }
-      .bublle1 {
-        position: absolute;
-        top: 48%;
-        left: 6%;
-        height: 60px;
-        width: 60px;
-        border-radius: 60px;
-        background: white;
-      }
-
-      .bublle2 {
-        position: absolute;
-        top: 58%;
-        left: 6%;
-        height: 30px;
-        width: 30px;
-        border-radius: 30px;
-        background: white;
-      }
-      .bublle3 {
-        position: absolute;
-        top: 64%;
-        left: 8%;
-        height: 20px;
-        width: 20px;
-        border-radius: 60px;
-        background: white;
-      }
       @media (max-width: 1000px) {
         display: none;
       }
     }
   }
-  .media {
-    width: 100%;
-    position: absolute;
-    z-index: 10;
-    margin-top: 1%;
-    top: 0%;
-    img {
-      cursor: pointer;
-      filter: drop-shadow(0px 0px 2px #ffffff);
-      height: 45px;
-      padding: 0.2% 2%;
-    }
-  }
-  .build-on {
-    position: absolute;
-    top: 15%;
-    right: 3%;
-    z-index: 6;
-    cursor: pointer;
-    @media (max-width: 600px) {
-      top: 80%;
-    }
 
-    img {
-      background: #000000;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      border: solid red;
-      border-radius: 50%;
-      height: 120px;
-
-      @media (max-width: 600px) {
-        height: 80px;
-      }
-    }
-  }
+  
   .construct {
     border: 2px solid red;
     background: #000000;
