@@ -247,7 +247,7 @@ const Competence = () => {
           </section>
         </div>
         {window.innerWidth < 800 && (
-          <motion.div className="dev-web-comp">
+          <div className="dev-web-comp">
             <div className="crop2"></div>
             <section className="section-dev">
               <h2>Domaine de compétences</h2>
@@ -282,7 +282,7 @@ const Competence = () => {
               </ul>
             </section>
             <div className="separator"></div>
-          </motion.div>
+          </div>
         )}
         {window.innerWidth > 800 && (
           <motion.div
