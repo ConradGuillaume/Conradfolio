@@ -88,6 +88,9 @@
       &:hover {
         border: 2px inset rgb(0, 0, 0);
       }
+      @media (max-width: 800px) {
+        backdrop-filter: none;
+      }
       @media (max-width: 600px) {
         margin: 5% 0%;
         width: 300px;
