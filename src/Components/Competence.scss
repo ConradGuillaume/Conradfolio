@@ -125,6 +125,10 @@
     overflow: hidden;
     //transform: translateY(-250px);
     rotate: 0deg;
+    @media (max-width: 800px) {
+      transform: translateY(0px);
+      rotate: 0;
+    }
     .separator {
       height: 50px;
       width: 3000px;
@@ -314,7 +318,7 @@
           padding: 0;
           cursor: pointer;
         }
-        @media (max-width: 600px) {
+        @media (max-width: 800px) {
           display: none;
         }
       }
@@ -333,11 +337,11 @@
           padding: 0;
           cursor: pointer;
         }
-        @media (max-width: 600px) {
+        @media (max-width: 800px) {
           display: none;
         }
       }
-      @media (max-width: 600px) {
+      @media (max-width: 800px) {
         display: none;
       }
 

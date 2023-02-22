@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import html from "../img/html.png";
 import css from "../img/css.png";
 import js from "../img/js.png";
@@ -11,7 +11,7 @@ import Ts from "../img/Ts.png";
 import Wp from "../img/wordpress.png";
 import poste from "../img/poste.jpg";
 import { useState } from "react";
-import { AnimatePresence,  motion} from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 
 import CV from "./CV";
 
@@ -35,11 +35,26 @@ const openAside = {
 };
 
 const Competence = () => {
-
   const [recommand, SetRecommand] = useState(false);
   const [remote, SetRemote] = useState(false);
   const [Cv, SetCv] = useState(false);
+  const [noAnim, SetNoAnim] = useState(true);
 
+  useEffect(() => {
+    function handleResize() {
+      if (window.innerWidth < 800) {
+        SetNoAnim(false);
+      } else {
+        SetNoAnim(true);
+      }
+    }
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
   return (
     <div name="competence" id="competence" className="competence-container">
       <div className="containlAll">
@@ -201,6 +216,7 @@ const Competence = () => {
           <h1>MES COMPÉTENCES</h1>
           <div className="crop"></div>
         </div>
+
         <div className="dev-web">
           <section className="section-dev">
             <div className="slide-contain">
@@ -248,50 +264,89 @@ const Competence = () => {
             </div>
           </section>
         </div>
-
-        <motion.div
-          className="dev-web-comp"
-          initial={{ y: "-25%" }}
-          whileInView={{
-            transition: { duration: 1.5 },
-            rotate: [-4, -2, 0],
-            y: ["-25%", "0%"],
-          }}
-        >
-          <div className="crop2"></div>
-          <section className="section-dev">
-            <h2>Domaine de compétences</h2>
-            <ul>
-              <li>
-                <h3>GESTION DE PROJETS WEB</h3>
-                <p>Site vitrine, évènementiel, e-commerce,</p>
-              </li>
-              <li>
-                <h3>CONCEPTION GRAPHIQUE & WEBDESIGN</h3>
-                <p>
-                  Logos,plaquettes publicitaires, cartes de visite, newsletters
-                </p>
-              </li>
-              <li>
-                <h3>INTÉGRATION HTML / CSS</h3>
-                <p> code respectueux des standards du Web</p>
-              </li>
-              <li>
-                <h3>DYNAMISE DES PAGES PAR JAVASCRIPT </h3>
-                <p>React / Framer Motion</p>
-              </li>
-              <li>
-                <h3>VALIDATION W3C, WAI & RÉFÉRENCEMENT NATUREL SEO</h3>
-                <p>Accessibilité et ergonomie des pages web</p>
-              </li>
-              <li>
-                <h3>CONCEPTION MULTI-PLATEFORMES</h3>
-                <p>Compatible tous supports, tablette & application mobile</p>
-              </li>
-            </ul>
-          </section>
-          <div className="separator"></div>
-        </motion.div>
+        {noAnim ? (
+          <motion.div
+            className="dev-web-comp"
+            initial={{ y: "-25%" }}
+            whileInView={{
+              transition: { duration: 1.5 },
+              rotate: [-4, -2, 0],
+              y: ["-25%", "0%"],
+            }}
+          >
+            <div className="crop2"></div>
+            <section className="section-dev">
+              <h2>Domaine de compétences</h2>
+              <ul>
+                <li>
+                  <h3>GESTION DE PROJETS WEB</h3>
+                  <p>Site vitrine, évènementiel, e-commerce,</p>
+                </li>
+                <li>
+                  <h3>CONCEPTION GRAPHIQUE & WEBDESIGN</h3>
+                  <p>
+                    Logos,plaquettes publicitaires, cartes de visite,
+                    newsletters
+                  </p>
+                </li>
+                <li>
+                  <h3>INTÉGRATION HTML / CSS</h3>
+                  <p> code respectueux des standards du Web</p>
+                </li>
+                <li>
+                  <h3>DYNAMISE DES PAGES PAR JAVASCRIPT </h3>
+                  <p>React / Framer Motion</p>
+                </li>
+                <li>
+                  <h3>VALIDATION W3C, WAI & RÉFÉRENCEMENT NATUREL SEO</h3>
+                  <p>Accessibilité et ergonomie des pages web</p>
+                </li>
+                <li>
+                  <h3>CONCEPTION MULTI-PLATEFORMES</h3>
+                  <p>Compatible tous supports, tablette & application mobile</p>
+                </li>
+              </ul>
+            </section>
+            <div className="separator"></div>
+          </motion.div>
+        ) : (
+          <motion.div className="dev-web-comp" initial={{ y: "0%", rotate: 0 }}>
+            <div className="crop2"></div>
+            <section className="section-dev">
+              <h2>Domaine de compétences</h2>
+              <ul>
+                <li>
+                  <h3>GESTION DE PROJETS WEB</h3>
+                  <p>Site vitrine, évènementiel, e-commerce,</p>
+                </li>
+                <li>
+                  <h3>CONCEPTION GRAPHIQUE & WEBDESIGN</h3>
+                  <p>
+                    Logos,plaquettes publicitaires, cartes de visite,
+                    newsletters
+                  </p>
+                </li>
+                <li>
+                  <h3>INTÉGRATION HTML / CSS</h3>
+                  <p> code respectueux des standards du Web</p>
+                </li>
+                <li>
+                  <h3>DYNAMISE DES PAGES PAR JAVASCRIPT </h3>
+                  <p>React / Framer Motion</p>
+                </li>
+                <li>
+                  <h3>VALIDATION W3C, WAI & RÉFÉRENCEMENT NATUREL SEO</h3>
+                  <p>Accessibilité et ergonomie des pages web</p>
+                </li>
+                <li>
+                  <h3>CONCEPTION MULTI-PLATEFORMES</h3>
+                  <p>Compatible tous supports, tablette & application mobile</p>
+                </li>
+              </ul>
+            </section>
+            <div className="separator"></div>
+          </motion.div>
+        )}
       </div>
     </div>
   );
