@@ -16,9 +16,9 @@ import kidsMobile from "../img/kids-mobile.png";
 import pizza from "../img/pizzaApDesk.png";
 import pizzatablet from "../img/pizzaApTablet.png";
 import pizzamobile from "../img/pizzaApMobile.png";
-import kanap from "../img/kanap.png";
-import kanapTablet from "../img/kanap-tablet.png";
-import kanapMobile from "../img/kanap-mobile.png";
+import kanap from "../img/Conrad.png";
+import kanapTablet from "../img/Conrad&co.jpg";
+import kanapMobile from "../img/Conrad&co.jpg";
 import { motion, AnimatePresence, useInView } from "framer-motion";
 import { useEffect } from "react";
 import { useState } from "react";
@@ -340,7 +340,7 @@ const Portfolio = () => {
                 <img src={kanap} alt="projet-1 " className="pc" />
                 <img src={kanapMobile} alt="" className="mobile" />
                 <img src={kanapTablet} alt="" className="tablet" />
-                <h1>Kanap</h1>
+                <h1>Conrad&Co</h1>
                 <AnimatePresence>
                   {animInfo3 && (
                     <motion.div
@@ -377,16 +377,23 @@ const Portfolio = () => {
                           document.querySelector(".hi").className = "info";
                         }}
                       >
-                        <h2> Site E-commerce </h2>
+                        <h2>Mon agence web</h2>
                         <h3>
                           Technologies Utilisées: <br />
-                          <p> JAVASCRIPT VANILLA</p>
+                          <p> Wordpress</p>
                         </h3>
                         <p>
-                          Construction de la logique d'une site de e-commerce de
-                          vente de canapé, appelle API, création d'un panier
-                          dynamique , formulaire , validation d'un panier, page
-                          de confirmation.
+                          Mon projet est de créer une agence web avec WordPress
+                          pour pratiquer et améliorer mes compétences en
+                          création de contenu. Je propose des services de
+                          qualité pour la conception de sites web, la rédaction
+                          de contenu et la création de graphismes. Je suis
+                          passionné par le web et je suis engagé dans un
+                          processus continu d'apprentissage pour rester à la
+                          pointe des dernières tendances et des technologies
+                          web. Contactez-moi pour discuter de vos projets et
+                          voir comment je peux vous aider à atteindre vos
+                          objectifs en ligne.
                         </p>
                       </div>
                     </motion.div>
@@ -439,7 +446,7 @@ const Portfolio = () => {
                         alt="info"
                       />
                       <motion.a
-                        href="https://fascinating-chaja-9bbaff.netlify.app/"
+                        href="https://fiestakids57.netlify.app/"
                         target="_blank"
                         exit={{ opacity: 0 }}
                         animate={{ opacity: 1, transition: { delay: 0.9 } }}
