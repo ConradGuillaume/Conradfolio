@@ -1,30 +1,11 @@
 import React from "react";
 import profil from "../img/moi.jpeg";
-import { motion} from "framer-motion";
+import { motion } from "framer-motion";
 import linkedin from "../img/linkedin.png";
 import github from "../img/github.png";
 import mail from "../img/email.png";
 import telephone from "../img/telephone.png";
 import BurgerNav from "./BurgerNav";
-
-const title = {
-  hidden: {
-    y: "50vh",
-    opacity: 0,
-  },
-  visible: {
-    y: 0,
-    opacity: 1,
-    transition: { duration: 1.5 },
-  },
-};
-
-const imgVariants = {
-  hover: {
-    scale: 1.05,
-    transition: { duration: 1, yoyo: Infinity },
-  },
-};
 
 const Presentation = () => {
   return (
@@ -53,10 +34,7 @@ const Presentation = () => {
       <div className="containAll">
         <div className="imgcontain">
           {" "}
-          <motion.img
-            initial={{ opacity: 0, y: "50vh" }}
-            animate={{ transition: { duration: 1.5 }, opacity: 1, y: 0 }}
-            variants={imgVariants}
+          <img
             className="moi"
             whileHover="hover"
             src={profil}
@@ -64,20 +42,9 @@ const Presentation = () => {
           />
         </div>
         <article>
-          <motion.h2
-            variants={title}
-            initial="hidden"
-            animate="visible"
-            className="name"
-          >
-            Guillaume Conrad
-          </motion.h2>
-          <motion.h1 variants={title} initial="hidden" animate="visible">
-            Développeur
-          </motion.h1>
-          <motion.h1 variants={title} initial="hidden" animate="visible">
-            React-Wordpress
-          </motion.h1>
+          <h2 className="name">Guillaume Conrad</h2>
+          <h1>Développeur</h1>
+          <h1>React-Wordpress</h1>
         </article>
       </div>
     </div>
