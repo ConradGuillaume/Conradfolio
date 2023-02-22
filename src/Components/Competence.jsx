@@ -288,7 +288,7 @@ const Competence = () => {
           <motion.div
             className="dev-web-comp"
             initial={{ y: "-25%" }}
-            animate={{
+            whileInView={{
               transition: { duration: 1.5 },
               rotate: [-4, -2, 0],
               y: ["-25%", "0%"],
