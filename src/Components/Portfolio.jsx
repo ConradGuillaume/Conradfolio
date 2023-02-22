@@ -365,6 +365,8 @@ const Portfolio = () => {
                         alt="info"
                       />
                       <motion.a
+                        href="https://conrad-and-co.com/"
+                        target="_blank"
                         exit={{ opacity: 0 }}
                         animate={{ opacity: 1, transition: { delay: 0.9 } }}
                       >
