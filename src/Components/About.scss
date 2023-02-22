@@ -30,6 +30,10 @@
     height: 120vh;
     overflow: hidden;
     background: $color-1;
+    @media (max-width: 800px) {
+      width: 100%;
+      background: #0c0f0ae5;
+    }
     @media (max-width: 1200px) {
       height: 100%;
     }

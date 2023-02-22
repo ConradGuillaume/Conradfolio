@@ -33,6 +33,10 @@
     50%/103.92px 100%;
   -webkit-mask: var(--mask);
   mask: var(--mask);
+  @media (max-width: 800px) {
+    width: 100%;
+    background: #0c0f0ae5;
+  }
   @media (max-width: 600px) {
     min-height: 2910px;
   }

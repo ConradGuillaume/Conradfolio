@@ -26,6 +26,10 @@
     width: 92%;
     height: 100%;
     background: $color-1;
+    @media (max-width: 800px) {
+      width: 100%;
+      background: #0c0f0ae5;
+    }
   }
   .imgcontain {
     position: absolute;
@@ -44,6 +48,9 @@
       border-radius: 50%;
       height: 280px;
       filter: drop-shadow(0px 1px 2px $color-3);
+      @media (max-width: 800px) {
+        margin-bottom: 50px;
+      }
     }
   }
 

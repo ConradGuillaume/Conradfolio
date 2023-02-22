@@ -27,6 +27,9 @@
     // background: $color-1;
     width: 92%;
     height: 100%;
+    @media (max-width: 800px) {
+      width: 100%;
+    }
   }
   .title {
     display: flex;
@@ -43,6 +46,10 @@
       padding: 50px 0px;
       width: 100%;
       background: $color-1;
+      @media (max-width: 800px) {
+        background: #0c0f0ae5;
+      }
+
       @media (max-width: 400px) {
         font-size: 22px;
       }
@@ -60,6 +67,9 @@
         50%/103.92px 100%;
       -webkit-mask: var(--mask);
       mask: var(--mask);
+      @media (max-width: 800px) {
+        background: #0c0f0ae5;
+      }
     }
   }
   .dev-web {
@@ -159,6 +169,9 @@
         50%/103.92px 100%;
       -webkit-mask: var(--mask);
       mask: var(--mask);
+      @media (max-width: 800px) {
+        background: #0c0f0ae5;
+      }
     }
     .section-dev {
       background: $color-1;
@@ -170,6 +183,7 @@
       @media (max-width: 800px) {
         align-items: flex-start;
         justify-content: center;
+        background: #0c0f0ae5;
       }
       @media (max-width: 600px) {
         width: 100%;

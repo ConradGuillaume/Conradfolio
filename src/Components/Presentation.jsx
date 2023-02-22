@@ -1,6 +1,5 @@
 import React from "react";
 import profil from "../img/moi.jpeg";
-import { motion } from "framer-motion";
 import linkedin from "../img/linkedin.png";
 import github from "../img/github.png";
 import mail from "../img/email.png";
