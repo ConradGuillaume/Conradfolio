@@ -125,10 +125,7 @@
     overflow: hidden;
     //transform: translateY(-250px);
     rotate: 0deg;
-    @media (max-width: 800px) {
-      transform: translateY(0px);
-      rotate: 0;
-    }
+
     .separator {
       height: 50px;
       width: 3000px;
