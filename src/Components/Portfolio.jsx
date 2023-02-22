@@ -16,7 +16,7 @@ import kidsMobile from "../img/kids-mobile.png";
 import pizza from "../img/pizzaApDesk.png";
 import pizzatablet from "../img/pizzaApTablet.png";
 import pizzamobile from "../img/pizzaApMobile.png";
-import kanap from "../img/Conrad.png";
+import kanap from "../img/Conrad&co.jpg";
 import kanapTablet from "../img/Conrad&co.jpg";
 import kanapMobile from "../img/Conrad&co.jpg";
 import { motion, AnimatePresence, useInView } from "framer-motion";
